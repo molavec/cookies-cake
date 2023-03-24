@@ -1,0 +1,8 @@
+{
+  "name": "cookies-cake",
+  "version": "1.0.0",
+  "description": "A wordpress theme for bakeries",
+  "main": "index.php",
+  "author": "Miguel Olave",
+  "license": "MIT"
+}
