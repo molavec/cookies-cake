@@ -5,16 +5,19 @@
  * 
  */
 
-function cookies_cake_scripts_styles() {
+function cookiescake_scripts_styles() {
   wp_enqueue_style('style', get_stylesheet_uri(), array(), '1.0.0' );
 };
-add_action('wp_enqueue_scripts', 'cookies_cake_scripts_styles');
+add_action('wp_enqueue_scripts', 'cookiescake_scripts_styles');
 
-// ADD MENUS
-function cookies_cake_menus() {
+/**
+ * ADD MENUS
+ * 
+ */
+function cookiescake_menus() {
   register_nav_menus( array(
-    'menu-principal' => __('Menu Principal', 'cookies_cake'),
+    'menu-principal' => __('Menu Principal', 'cookiescake'),
   ));
 }
-add_action('init', 'cookies_cake_menus');
+add_action('init', 'cookiescake_menus');
 
