@@ -19,10 +19,12 @@ $PAGE_TITLE = 'COOKIE CAKE'
         <p>header</p>
       </div>
       
-      <div class="menu">
+      <div class="main-menu">
         <?php 
           $args = array(
             'theme_location' => 'menu-principal',
+            'container' => 'nav',
+            'container_class' => 'main-menu-container'
           );
 
           wp_nav_menu($args);
