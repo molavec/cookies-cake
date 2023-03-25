@@ -30,6 +30,17 @@ services:
       - ./db:/var/lib/mysql
       # - db:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_USER=exampleuser
+      - PMA_PASSWORD=root
+
 volumes:
   wordpress:
   db:
+  phpmyadmin:
