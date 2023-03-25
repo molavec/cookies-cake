@@ -9,6 +9,7 @@ $PAGE_TITLE = 'COOKIE CAKE'
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $PAGE_TITLE ?></title>
+  <?php wp_head(); ?>
 </head>
 <body>
   <!-- HEADER -->
@@ -20,7 +21,8 @@ $PAGE_TITLE = 'COOKIE CAKE'
       </div>
       
       <div class="main-menu">
-        <?php 
+        <?php
+        
           $args = array(
             'theme_location' => 'menu-principal',
             'container' => 'nav',
